@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.bindu.inclass03.EditActivity">
+
+<TextView
+    android:id="@+id/textViewEditinfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="117dp"
+    android:layout_marginTop="35dp"
+    android:text="@string/editinfo"
+    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonSave"
+        android:layout_below="@+id/textViewEditinfo"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textViewNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/details"
+        android:layout_alignBottom="@+id/details"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/textViewdepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewmood"
+        android:layout_alignStart="@+id/textViewmood"
+        android:layout_below="@+id/textViewNam"
+        android:layout_weight="1"
+        android:text="@string/Dept"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewdepts"
+        android:layout_above="@id/textViewmood"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radioButtonSIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton2CS"
+            android:layout_below="@+id/radioButton2CS"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/sis"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="224dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton3Bio"
+            android:layout_alignStart="@+id/radioButton3Bio"
+            android:layout_marginBottom="19dp"
+            android:layout_weight="1"
+            android:text="@string/cs"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3Bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_weight="1"
+            android:text="@string/bio"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_weight="1"
+            android:text="@string/others"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewmood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_marginBottom="15dp"
+        android:text="@string/mood"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSave"
+        android:layout_alignLeft="@+id/buttonSave"
+        android:layout_alignStart="@+id/buttonSave"
+        android:layout_marginBottom="11dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
