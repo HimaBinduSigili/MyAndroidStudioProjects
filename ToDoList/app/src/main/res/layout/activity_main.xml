@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.todolist.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/ic_action_new" />
+
+    <ImageButton
+        android:id="@+id/imageButtonedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewnext"
+        android:layout_toEndOf="@+id/imageViewprev"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButtondel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonedit"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/imageButtonedit"
+        app:srcCompat="@drawable/ic_action_discard" />
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonadd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtitle"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/imageButtondel"
+        android:text="@string/date"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/textViewtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewpriority"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imageButtonedit"
+        android:text="@string/time"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/textViewpriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/prior"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/textViewtasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonedit"
+        android:layout_marginBottom="19dp"
+        android:layout_toStartOf="@+id/imageViewnext"
+        android:text="@string/task"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <ImageView
+        android:id="@+id/imageViewprev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageButtonedit"
+        android:layout_toStartOf="@+id/textViewtasks"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageViewnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewlast"
+        android:layout_toStartOf="@+id/imageButtonadd"
+        app:srcCompat="@drawable/forward" />
+
+    <ImageView
+        android:id="@+id/imageViewfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewprev"
+        android:layout_toStartOf="@+id/imageViewprev"
+        app:srcCompat="@drawable/backward" />
+
+    <ImageView
+        android:id="@+id/imageViewlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButtonadd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/next" />
+</RelativeLayout>

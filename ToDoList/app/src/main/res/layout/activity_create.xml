@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.todolist.CreateActivity">
+
+    <EditText
+        android:id="@+id/editTexttitle"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:maxLength="20"
+        android:ems="10"
+        android:hint="@string/titl"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextdate"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTexttitle"
+        android:layout_below="@+id/editTexttitle"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/dat"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTexttime"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextdate"
+        android:layout_below="@+id/editTextdate"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/tim"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTexttime"
+        android:layout_below="@+id/editTexttime"
+        android:layout_marginTop="32dp"
+        android:text="@string/priority" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTexttitle"
+        android:layout_marginBottom="130dp"
+        android:id="@+id/radioGroupPriority">
+
+        <RadioButton
+            android:id="@+id/radioButtonhigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButtonlow"
+            android:layout_below="@+id/radioButtonlow"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/high" />
+
+        <RadioButton
+            android:id="@+id/radioButtonmedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/radioButtonlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButtonmedium"
+            android:layout_below="@+id/radioButtonmedium"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:text="@string/low" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioGroupPriority"
+        android:layout_marginBottom="28dp"
+        android:text="@string/save" />
+
+</RelativeLayout>
