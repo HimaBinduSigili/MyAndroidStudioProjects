@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Homework03</string>
+    <string name="welcome">Welcome to Trivia App</string>
+    <string name="exit">Exit</string>
+    <string name="start">Start Trivia</string>
+    <string name="load">Loading Trivia</string>
+    <string name="Que">Q</string>
+    <string name="quit">Quit</string>
+    <string name="next">Next</string>
+    <string name="Load">Loading Image</string>
+    <string name="stat">Trivia Stats</string>
+    <string name="correct">Correct Answers</string>
+    <string name="trya">Try Again</string>
+</resources>

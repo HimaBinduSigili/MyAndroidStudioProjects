@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.homework03.StatActivity">
+
+    <TextView
+        android:id="@+id/textViewStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/stat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+    <TextView
+        android:id="@+id/textViewcorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewStats"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/correct"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/textViewfinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewpercent"
+        android:layout_marginTop="132dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewcorrect"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/textViewpercent" />
+
+    <TextView
+        android:id="@+id/textViewpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewcorrect"
+        android:layout_alignTop="@+id/progressBar3"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/buttonqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewpercent"
+        android:layout_marginBottom="17dp"
+        android:text="@string/quit" />
+
+    <Button
+        android:id="@+id/buttontryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buttonqu"
+        android:layout_marginEnd="11dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/trya" />
+</RelativeLayout>
