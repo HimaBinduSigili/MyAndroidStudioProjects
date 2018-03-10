@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.bmicalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/age" />
+
+    <EditText
+        android:id="@+id/editTextyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewage"
+        android:layout_alignBottom="@+id/textViewage"
+        android:layout_alignLeft="@+id/editTextpounds"
+        android:layout_alignStart="@+id/editTextpounds"
+        android:ems="10"
+        android:hint="@string/years"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <TextView
+        android:id="@+id/textViewweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewage"
+        android:layout_alignStart="@+id/textViewage"
+        android:layout_below="@+id/editTextyear"
+        android:layout_marginTop="40dp"
+        android:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/editTextpounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewweight"
+        android:layout_alignBottom="@+id/textViewweight"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/pounds"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5" />
+
+    <TextView
+        android:id="@+id/textViewheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewweight"
+        android:layout_alignStart="@+id/textViewweight"
+        android:layout_below="@+id/editTextpounds"
+        android:layout_marginTop="41dp"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/editTextfeet"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewheight"
+        android:layout_alignBottom="@+id/textViewheight"
+        android:layout_alignLeft="@+id/editTextpounds"
+        android:layout_alignStart="@+id/editTextpounds"
+        android:ems="10"
+        android:hint="@string/feet"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/editTextinches"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextfeet"
+        android:layout_alignBottom="@+id/editTextfeet"
+        android:layout_alignEnd="@+id/editTextpounds"
+        android:layout_alignRight="@+id/editTextpounds"
+        android:ems="10"
+        android:hint="@string/inches"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCalculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/nullval"
+        android:textAlignment="center" />
+
+</RelativeLayout>
