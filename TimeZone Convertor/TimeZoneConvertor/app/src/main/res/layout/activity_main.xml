@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.inclass02fall2015v2.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewUtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewAm"
+        android:layout_marginTop="37dp"
+        android:text="@string/utc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <EditText
+        android:id="@+id/editTexthrs"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUtc"
+        android:layout_alignBottom="@+id/textViewUtc"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textViewUtc"
+        android:ems="10"
+        android:maxLength="2"
+        android:hint="@string/hrs"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextmnts"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/editTexthrs"
+        android:ems="10"
+        android:maxLength="2"
+        android:hint="@string/mnts"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTexthrs"
+        android:layout_alignBottom="@+id/editTexthrs"
+        android:layout_toEndOf="@+id/editTexthrs"
+        android:text="@string/s"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/textViewAMPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/editTextmnts" />
+
+    <TextView
+        android:id="@+id/textViewAm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewResult"
+        android:layout_below="@+id/editTexthrs"
+        android:layout_marginTop="25dp"
+        android:text="@string/ampm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAm"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/textViewAm" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonEST"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="43dp"
+        android:text="@string/res"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <Button
+        android:id="@+id/buttonEST"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/est" />
+
+    <Button
+        android:id="@+id/buttonCST"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonEST"
+        android:layout_below="@+id/buttonEST"
+        android:text="@string/cst" />
+
+    <Button
+        android:id="@+id/buttonMST"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonCST"
+        android:layout_below="@+id/buttonCST"
+        android:text="@string/mst" />
+
+    <Button
+        android:id="@+id/buttonPST"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonMST"
+        android:layout_below="@+id/buttonMST"
+        android:text="@string/pst" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonPST"
+        android:layout_below="@+id/buttonPST"
+        android:text="@string/clear" />
+
+    <TextView
+        android:id="@+id/textViewPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewResult"
+        android:layout_toEndOf="@+id/editTextmnts"
+        android:textColor="?attr/colorError" />
+</RelativeLayout>

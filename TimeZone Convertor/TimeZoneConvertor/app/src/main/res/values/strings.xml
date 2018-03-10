@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">InClass02Fall2015V.2</string>
+    <string name="utc">UTC:</string>
+    <string name="hrs">Hours</string>
+    <string name="mnts">Minutes</string>
+    <string name="est">Eastern Standar Time (EST)</string>
+    <string name="res">Result:</string>
+    <string name="ampm">AM/PM :</string>
+    <string name="s">:</string>
+    <string name="cst">Central Standard Time (CST)</string>
+    <string name="mst">Mountain Standard Time (MST)</string>
+    <string name="pst">Pacific Standard Time (PST)</string>
+    <string name="clear">Clear All</string>
+</resources>
