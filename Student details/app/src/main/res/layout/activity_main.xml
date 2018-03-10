@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.inclass3fall2014.MainActivity">
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextage"
+        android:layout_alignStart="@+id/editTextage"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextage"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextemail"
+        android:layout_alignStart="@+id/editTextemail"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="numberSigned"
+        android:maxLength="2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <EditText
+        android:id="@+id/editTextphone"
+        android:layout_width="325dp"
+        android:maxLength="10"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewDept"
+        android:layout_alignStart="@+id/buttonSubmit"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:id="@+id/textViewDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextphone"
+        android:layout_centerVertical="true"
+        android:text="@string/Dept"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDept"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/textViewDept">
+
+        <RadioButton
+            android:id="@+id/radioButtonSIS"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton2CS"
+
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="@string/sis"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="224dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton3Health"
+
+            android:layout_marginBottom="19dp"
+            android:layout_weight="1"
+            android:text="@string/cs"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3Health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonSubmit"
+
+            android:layout_marginBottom="23dp"
+            android:layout_weight="1"
+            android:text="@string/health"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="315dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextphone"
+        android:layout_alignStart="@+id/editTextphone"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+</RelativeLayout>
