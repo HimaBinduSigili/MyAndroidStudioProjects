@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bindu.inclassfall2013.MainActivity">
+
+    <Button
+        android:id="@+id/buttonred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="57dp"
+        android:onClick="getRED"
+        android:text="RED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonred"
+        android:layout_alignBottom="@+id/buttonred"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:onClick="getBLACK"
+        android:text="BLACK"
+        app:layout_constraintStart_toEndOf="@+id/buttonred"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonred"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonred"
+        android:layout_marginBottom="213dp"
+        android:onClick="getWHITE"
+        android:text="WHITE"
+        app:layout_constraintEnd_toStartOf="@+id/buttonpink"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonpink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonwhite"
+        android:layout_alignBottom="@+id/buttonwhite"
+        android:layout_alignLeft="@+id/buttonblack"
+        android:layout_alignStart="@+id/buttonblack"
+        android:onClick="getPINK"
+        android:text="PINK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="No. Buttons Clicked : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
