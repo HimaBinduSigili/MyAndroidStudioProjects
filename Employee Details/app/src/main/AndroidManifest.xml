@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bindu.inclass03">
+    package="com.example.bindu.inclass3fall2014">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity">
+            android:name=".MainActivity"
+            android:label="Main Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,14 +20,15 @@
         </activity>
         <activity
             android:name=".DisplayActivity"
-            android:label="Display Activity" />
+            android:label="Display Activity" >
+
+        </activity>
         <activity android:name=".EditActivity" android:label="Edit Activity">
             <intent-filter>
-                <action android:name="com.example.bindu.inclass03.intent.action.VIEW" />
+                <action android:name="com.example.bindu.inclass3fall2014.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </activity>
     </application>
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.bindu.inclass3fall2014.DisplayActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.bindu.inclass03.DisplayActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:text="@string/empinfo"
+        android:text="@string/stu"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="30dp" />
@@ -26,89 +26,84 @@
         android:layout_below="@+id/textView"
         android:layout_marginStart="42dp"
         android:layout_marginTop="48dp"
-        android:text="@string/name"
+        android:text="@string/nam"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <TextView
-        android:id="@+id/textViewage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewname"
-        android:layout_below="@+id/textViewname"
-        android:layout_marginTop="52dp"
-        android:text="@string/age"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textViewemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewage"
-        android:layout_below="@+id/textViewage"
-        android:layout_marginTop="52dp"
-        android:text="@string/email"
+        android:layout_alignLeft="@+id/textViewname"
+        android:layout_alignStart="@+id/textViewname"
+        android:layout_below="@+id/textViewname"
+        android:layout_marginTop="28dp"
+        android:text="@string/ema"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <TextView
-        android:id="@+id/textViewdepts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewemail"
-        android:layout_below="@+id/textViewemail"
-        android:layout_marginTop="44dp"
-        android:text="@string/Phone"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textViewdept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewdepts"
-        android:layout_below="@+id/textViewdepts"
-        android:layout_marginTop="47dp"
+        android:layout_alignLeft="@+id/textViewemail"
+        android:layout_alignStart="@+id/textViewemail"
+        android:layout_below="@+id/textViewemail"
+        android:layout_marginTop="40dp"
         android:text="@string/Dept"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <ImageButton
         android:id="@+id/imageButtonname"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/textViewage"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="11dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textViewname"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
         android:src="@drawable/ic_action_edit" />
 
-    <ImageButton
-        android:id="@+id/imageButtonage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignBottom="@+id/textViewage"
-        android:layout_alignStart="@+id/imageButtonname"
-        app:srcCompat="@drawable/ic_action_edit" />
 
     <ImageButton
         android:id="@+id/imageButtonemail"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/textViewdepts"
-        android:layout_alignStart="@+id/imageButtonage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+
+        android:layout_alignBottom="@+id/textViewemail"
+        android:layout_alignLeft="@+id/imageButtonname"
+        android:layout_alignStart="@+id/imageButtonname"
         app:srcCompat="@drawable/ic_action_edit" />
 
-    <ImageButton
-        android:id="@+id/imageButtonphone"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/imageButtondept4"
-        android:layout_alignStart="@+id/imageButtonemail"
-        app:srcCompat="@drawable/ic_action_edit" />
 
     <ImageButton
         android:id="@+id/imageButtondept4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignStart="@+id/imageButtonphone"
-        android:layout_below="@+id/textViewdepts"
-        android:layout_marginTop="27dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textViewdept"
+        android:layout_alignLeft="@+id/imageButtonmood"
+        android:layout_alignStart="@+id/imageButtonmood"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+    <TextView
+        android:id="@+id/textViewmood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewdept"
+        android:layout_alignStart="@+id/textViewdept"
+        android:layout_below="@+id/textViewdept"
+        android:layout_marginTop="36dp"
+        android:text="@string/moo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonmood"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textViewmood"
+        android:layout_alignLeft="@+id/imageButtonemail"
+        android:layout_alignStart="@+id/imageButtonemail"
         app:srcCompat="@drawable/ic_action_edit" />
 
 </RelativeLayout>
+
